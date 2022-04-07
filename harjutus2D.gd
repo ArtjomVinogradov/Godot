@@ -10,6 +10,7 @@ func _ready():
 	eludearv +=2
 	print(eludearv)
 
-var rng = RandomNumberGenerator.new()
-	print(rng.randomize())
-	var my_random_number = rng.randf_range(0.19)
+	var rng = RandomNumberGenerator.new()
+	rng.randomize()
+	var my_random_number = rng.randi_range(0,19)
+	print(my_random_number)
