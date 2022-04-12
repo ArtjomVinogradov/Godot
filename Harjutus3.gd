@@ -1,10 +1,21 @@
 extends Node
-var money = 100
-var shit = 60
+
 func _ready():
-	int(input("Palju raha sul on?"))
-	if money >= 60:
+	
+	var l = 10
+	var b = 15
+	var Pindala = l*b
+	
+	var money = 100
+	var shit = 205
+	int("Palju raha sul on?")
+	if money >= shit:
 		print("Jah sa saad osta mees")
-	elif money >= 50:
-		print("Oh mees kahjuks sul pole raha")
+	elif money <= shit:
+		print("Oh mees kahjuks sul pole raha, sul on veel vaja ", shit - money, " raha")
+	print(Pindala)
+
+
+
+	
 
