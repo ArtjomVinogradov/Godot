@@ -8,6 +8,9 @@ var score = 0
 var counter = 0
 
 func _process(delta):
+	$elud.text="Elud: "+str(HP)
+	$Ammo.text="Ammo: "+str(salv)
+	$Score.text="Score: "+str(score)
 	if Input.is_action_just_pressed("reloading"):
 		print("cover me I'am reloading" )
 		salv = 5
@@ -21,4 +24,9 @@ func _process(delta):
 		print("Your ammo mees " , salv)
 		
 	if HP<0:
-		print("game over!!")
+		print("Game over!!")
+		
+
+func _showing():
+ var elud =  print(HP)
+
