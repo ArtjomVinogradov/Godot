@@ -27,6 +27,3 @@ func _process(delta):
 		print("Game over!!")
 		
 
-func _showing():
- var elud =  print(HP)
-
